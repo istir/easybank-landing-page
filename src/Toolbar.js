@@ -11,6 +11,9 @@ class Toolbar extends React.Component {
   handleMenuClick() {
     this.setState({ showMobile: !this.state.showMobile });
   }
+  hideMenu() {
+    this.setState({ showMobile: false });
+  }
   render() {
     return (
       <div className="toolbar background">
@@ -38,6 +41,8 @@ class Toolbar extends React.Component {
           </button>
         </div>
         <div
+          onClick={this.hideMenu.bind(this)}
+          onTouchStart={this.hideMenu.bind(this)}
           className={`mobile background ${
             this.state.showMobile ? "show" : "hide"
           }`}
