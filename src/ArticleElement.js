@@ -5,7 +5,7 @@ class ArticleElement extends React.Component {
   }
   render() {
     return (
-      <div className="article element">
+      <div className="article element clickable">
         <img src={this.props.image}></img>
         <div className="text verysmall">{this.props.author}</div>
         <div className="header medium">{this.props.header}</div>

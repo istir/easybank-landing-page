@@ -1,5 +1,129 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 
+@media only screen and (max-width: 600px) {
+  .toolbar.table > div,
+  .toolbar.table > button.filled {
+    display: none;
+  }
+  .toolbar.table > button.hamburgerMenu {
+    display: block;
+    width: 50px;
+  }
+
+  .foot.background {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .foot.logos {
+    margin-top: 5vh !important;
+
+    grid-row: 1;
+    grid-column: 1 !important;
+  }
+  .foot.options {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-row: 2;
+    grid-column: 1 !important;
+  }
+  .foot.invite {
+    grid-row: 3;
+    grid-column: 1 !important;
+  }
+  .foot.text.normal {
+    text-align: center;
+  }
+  .foot.background {
+    height: 35rem !important;
+  }
+  .foot.invite {
+    text-align: center !important;
+  }
+  .flexbox {
+    padding: 1rem !important;
+  }
+  .flexbox.introBox {
+    display: block;
+    padding: 0 !important;
+  }
+  .intro.background {
+    width: 100vw !important;
+    margin-left: 0 !important;
+  }
+  .intro.background.mockup {
+    right: 0 !important;
+  }
+  .intro.intro.background.image {
+    top: -20%;
+    /* width: 80% !important; */
+  }
+  .intro:not(.background) {
+    /* padding: 0px 1rem 0px 1rem; */
+    text-align: center;
+    width: 100%;
+  }
+  .flexbox:not(.article) {
+    text-align: center;
+  }
+  .article > .header.big {
+    text-align: center !important;
+  }
+  .list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .reason.element {
+    margin-right: 0px !important;
+  }
+  .article.element {
+    width: 100% !important;
+    margin: 0 !important;
+
+    padding-bottom: 10vh !important;
+  }
+  .article.element > *:not(img) {
+    width: 80%;
+    margin: auto;
+  }
+  .mobile.background {
+    position: fixed;
+    background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.4));
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  .mobile.menu {
+    width: calc(90%);
+    background: var(--white);
+    position: fixed;
+    display: grid;
+    /* height: 100vh; */
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2rem 0px 2rem 0px;
+    border-radius: 10px;
+    /* box-shadow: 0 30px 999px 20px #000; */
+    pointer-events: all;
+  }
+  .mobile.menu > * {
+    color: var(--darkBlue) !important;
+  }
+  .mobile.background {
+    display: block !important;
+  }
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none !important;
+}
+
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
@@ -21,6 +145,12 @@ button {
 }
 a {
   cursor: pointer;
+  transition: 0.3s;
+}
+a:hover {
+  /* text-shadow: 0 0 0 rgba(0, 0, 0, 1); */
+  filter: brightness(0.5);
+  text-decoration: underline;
 }
 .parent {
   /* margin-left: 50px; */
@@ -92,6 +222,14 @@ a {
   height: 65vh;
 }
 
+.hamburgerMenu {
+  background: transparent;
+  border: 0px solid;
+  display: none;
+  grid-column: 3 !important;
+  font-size: 2em;
+}
+
 .filled {
   background: linear-gradient(90deg, var(--limeGreen), var(--brightCyan));
   padding: 0.8rem 2rem;
@@ -99,18 +237,17 @@ a {
   border-radius: 999px;
   font-weight: 700;
   color: var(--lightGrayishBlue);
-  /* opacity: 1; */
 }
 .filled:hover {
   box-shadow: inset 0 0 0px 990px rgba(255, 255, 255, 0.5);
-  opacity: 1;
 }
 
 .intro.background.mockup {
   /* width: ; */
   /* position: absolute; */
   /* transform: translate(20%, -75%); */
-  width: 100%;
+  /* width: 100%; */
+  width: fit-content;
   position: relative;
   right: -8vw;
   top: -7vh;
@@ -142,10 +279,21 @@ a {
 }
 .flexbox.introBox {
   margin-top: 50px;
+  flex-direction: row-reverse;
+}
+.background.mobile {
+  display: none;
 }
 .list {
   grid-template-columns: repeat(4, 1fr);
   display: grid;
+}
+.clickable {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.clickable:hover {
+  filter: brightness(0.8);
 }
 .article > .header.big,
 .reasons > .header.big {
@@ -188,7 +336,13 @@ a {
   grid-template-rows: 4em;
   margin: auto;
 }
-
+.foot.icons {
+  grid-row: 2;
+  margin: auto;
+}
+.foot.icons > img {
+  padding: 0px 5px 0px 5px;
+}
 .foot.options {
   margin: auto;
   /* margin-right: 50%; */

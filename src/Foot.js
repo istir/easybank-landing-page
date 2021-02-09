@@ -18,12 +18,12 @@ class Foot extends React.Component {
             style={{ gridRow: 1, filter: "brightness(30)" }}
             src={Logo}
           ></img>
-          <div style={{ gridRow: 2, margin: "auto" }}>
-            <img src={fb}></img>
-            <img src={yt}></img>
-            <img src={tt}></img>
-            <img src={pi}></img>
-            <img src={ig}></img>
+          <div className="foot icons">
+            <img className="clickable" src={fb}></img>
+            <img className="clickable" src={yt}></img>
+            <img className="clickable" src={tt}></img>
+            <img className="clickable" src={pi}></img>
+            <img className="clickable" src={ig}></img>
           </div>
           {/* </div> */}
         </div>
