@@ -9,7 +9,7 @@ class Intro extends React.Component {
 
   render() {
     return (
-      <div className="flexbox">
+      <div className="flexbox introBox">
         <div className="intro">
           <div className="header biggest">Next generation digital banking</div>{" "}
           <div className="text normal">

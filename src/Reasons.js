@@ -1,6 +1,8 @@
 import React from "react";
 import iconOnline from "./images/icon-online.svg";
-import mockups from "./images/image-mockups.png";
+import iconBudgeting from "./images/icon-budgeting.svg";
+import iconOnboarding from "./images/icon-onboarding.svg";
+import iconAPI from "./images/icon-api.svg";
 import ReasonElement from "./ReasonElement";
 
 class Reasons extends React.Component {
@@ -10,7 +12,7 @@ class Reasons extends React.Component {
 
   render() {
     return (
-      <div className="flexbox">
+      <div className="flexbox reasons">
         <div className="reasons text">
           <div className="header big">Why choose Easybank?</div>{" "}
           <div className="normalText">
@@ -21,22 +23,27 @@ class Reasons extends React.Component {
             <ReasonElement
               image={iconOnline}
               header="Online Banking"
-              text="Lorem ipsum"
+              text="Our modern web and mobile applications allow you to
+              keep track of your finances wherever you are in the world."
             />
             <ReasonElement
-              image={iconOnline}
-              header="Online Banking"
-              text="Lorem ipsum"
+              image={iconBudgeting}
+              header="Simple Budgeting"
+              text="See exactly where your money goes each month. Receive notifications when
+              you’re close to hitting your limits."
             />
             <ReasonElement
-              image={iconOnline}
-              header="Online Banking"
-              text="Lorem ipsum"
+              image={iconOnboarding}
+              header="Fast Onboarding"
+              text="We don’t do branches.
+              Open your account in minutes online and start taking control of your
+              finances right away."
             />
             <ReasonElement
-              image={iconOnline}
-              header="Online Banking"
-              text="Lorem ipsum"
+              image={iconAPI}
+              header="Open API"
+              text="Manage your savings, investments, pension, and
+              much more from one account. Tracking your money has never been easier."
             />
           </div>
           {/* <button style={{ marginTop: "20px" }} className="filled">
