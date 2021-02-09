@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/easybank-landing-page/static/css/main.cc6c9c0d.chunk.css",
-    "main.js": "/easybank-landing-page/static/js/main.4b30a4b1.chunk.js",
-    "main.js.map": "/easybank-landing-page/static/js/main.4b30a4b1.chunk.js.map",
+    "main.css": "/easybank-landing-page/static/css/main.8bfca722.chunk.css",
+    "main.js": "/easybank-landing-page/static/js/main.738b2287.chunk.js",
+    "main.js.map": "/easybank-landing-page/static/js/main.738b2287.chunk.js.map",
     "runtime-main.js": "/easybank-landing-page/static/js/runtime-main.a85d20aa.js",
     "runtime-main.js.map": "/easybank-landing-page/static/js/runtime-main.a85d20aa.js.map",
     "static/js/2.84785edd.chunk.js": "/easybank-landing-page/static/js/2.84785edd.chunk.js",
@@ -10,15 +10,16 @@
     "static/js/3.ae406b61.chunk.js": "/easybank-landing-page/static/js/3.ae406b61.chunk.js",
     "static/js/3.ae406b61.chunk.js.map": "/easybank-landing-page/static/js/3.ae406b61.chunk.js.map",
     "index.html": "/easybank-landing-page/index.html",
-    "static/css/main.cc6c9c0d.chunk.css.map": "/easybank-landing-page/static/css/main.cc6c9c0d.chunk.css.map",
+    "static/css/main.8bfca722.chunk.css.map": "/easybank-landing-page/static/css/main.8bfca722.chunk.css.map",
     "static/js/2.84785edd.chunk.js.LICENSE.txt": "/easybank-landing-page/static/js/2.84785edd.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/easybank-landing-page/static/media/bg-intro-desktop.8be308fd.svg",
+    "static/media/bg-intro-desktop.8be308fd.svg": "/easybank-landing-page/static/media/bg-intro-desktop.8be308fd.svg",
+    "static/media/icon-online.b0622b15.svg": "/easybank-landing-page/static/media/icon-online.b0622b15.svg",
     "static/media/image-mockups.48d35b17.png": "/easybank-landing-page/static/media/image-mockups.48d35b17.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a85d20aa.js",
     "static/js/2.84785edd.chunk.js",
-    "static/css/main.cc6c9c0d.chunk.css",
-    "static/js/main.4b30a4b1.chunk.js"
+    "static/css/main.8bfca722.chunk.css",
+    "static/js/main.738b2287.chunk.js"
   ]
 }
